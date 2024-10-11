@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lEXUS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            /* Background image */
+        header {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for header */
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+        }
+        nav ul li {
+            display: inline; /* Display list items inline */
+            margin-right: 20px; /* Space between menu items */
+        }
+        nav ul li a {
+            color: white; /* Link color */
+            text-decoration: none; /* Remove underline */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo on the left -->
+            <div class="logo">
+                <img src="data:image/png;base64,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" alt="inview">
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navbar">
+                <ul>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="About.html">About</a>
+                    <a href="products.html">Products</a>  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main content goes here -->
+        <h1>Welcome to Our Website</h1>
+        <p>Your content will be displayed here.</p>
+    </main>
+</body>
+</html>
